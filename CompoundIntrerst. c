@@ -1,0 +1,58 @@
+/*
+NAME . BONFACE MUTINDA 
+REGNO. CT101/G/26541/25
+ASSIGNMENT. 
+[Qn 3.]
+Description. 
+this is a program that Calculates the CompoundIntrerst 
+prompts user to enter 
+1. Principal 
+2.Rate
+3. No of times a year 
+4.Years
+
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main () 
+{
+float A, I;
+int P;
+float r;
+int n;
+int t;
+float R;
+
+printf("Enter Your Principal: \n");
+scanf("%d",&P);
+
+printf("Enter the rate: \n");
+scanf("%f",&r);
+
+printf("Enter the number of times a year: \n");
+scanf("%d",&n);
+
+printf("Enter Number of years: \n");
+scanf("%d",&t);
+
+R=r/100;
+A = P*pow((1+R/n),n*t);
+I=A-P;
+
+printf("‐--------------------------------------\n");
+printf("HERE ARE YOUR ENTRIES\n");
+printf("‐--------------------------------------\n");
+printf("You entrred principal : %d\n",P);
+printf("your rate is: %.2f %\n",r);
+printf("Numberof times a year :%d\n",n);
+printf("You entered numberof years: %d\n",t);
+printf("‐--------------------------------------\n");
+printf("--------CALCULATIon RESULTS---------\n");
+printf("‐--------------------------------------\n");
+printf("CompoundIntrerst =%.2f\n",A);
+printf("Intrerst= %.2f\n",I);
+printf("‐--------------------------------------\n");
+return 0;
+}
